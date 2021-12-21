@@ -16,7 +16,7 @@ class GalleryController extends Controller
 
     	$g = new Gallery;
     	$g->title = $r->title;
-    	$g->description = $r->title;
+    	$g->description = $r->description;
     	$g->imagePath = '/images/'. $filename;
         $r->image->move(public_path('images'), $filename);
     	$g->save();
